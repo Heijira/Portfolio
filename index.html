@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" class="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vincent Feger</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./ext/bootstrap.css">
+    <!-- Mon CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>    <!-- Jbootstrap -->
+    <script src="./ext/bootstrap.js"></script>
+    <script src="js/myscript.js"></script>
+    <!-- Stellar -->
+    <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    </head>
+
+
+  <body>
+
+<!-- On créé le futur carousel grace à une balise HEADER -->
+<header class="carousel slide">
+<!-- On créé des petit point/cercles, qui slident les images -->
+  <ul class="carousel-indicators"><!--On remplace les numéro de liste grace à une classe bootstrap-->
+<!-- On créé autant de petites boules, que de sections et d'images à slider -->
+    <li data-slide-to="0" class="active"></li>
+    <li data-slide-to="1"></li>
+    <li data-slide-to="2"></li>
+  </ul>
+
+    <div class="carousel-inner">
+<!--Div avec une background img 1-->
+<div class="item active">
+  <div class="resize js-scrollTo" href="#cv" id="u1"></div>
+    <div class="carousel-caption">
+      <h2>CV</h2>
+    </div>
+</div>
+<!--Div avec une background img 2-->
+<div class="item">
+  <div class="resize js-scrollTo" href="#work" id="u2"></div>
+    <div class="carousel-caption">
+      <h2>WORK</h2>
+    </div>
+</div>
+<!--Div avec une background img 3-->
+<div class="item">
+  <div class="resize js-scrollTo" href="#contacts" id="u4"></div>
+    <div class="carousel-caption">
+      <h2>CONTACTS</h2>
+    </div>
+</div>
+</div>
+
+<!-- On créé 1 flèche vers la gauche qui slidera vers la gauche -->
+  <a class="left carousel-control" href=".carousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+<!-- On créé 1 flèche vers la droite qui slidera vers la droite -->
+  <a class="right carousel-control" href=".carousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+
+</header>
+<!-- ___________________________________________________________________ -->
+<!-- ___________________________________________________________________ -->
+<!-- ___________________________________________________________________ -->
+<!-- ___________________________________________________________________ -->
+<!-- ___________________________________________________________________ -->
+
+<div data-stellar-background-ratio="0.5" class="banniere img1"></div>
+
+<div class="container clear" id="cv">
+  <section>
+    <h1>CV</h1>
+    <p>
+      SALUUUUUUUUUUUUUUUUUT
+    </p>
+  </section>
+</div>
+
+<div data-stellar-background-ratio="0.5" class="banniere img2"></div>
+
+<div class="container clear" id="work">
+  <section>
+    <h1>WORK</h1>
+    <p>
+      SALUUUUUUUUUUUUUUUUUT
+    </p>
+  </section>
+</div>
+
+<div data-stellar-background-ratio="0.5" class="banniere img3"></div>
+
+<div class="container clear" id="contacts">
+  <section>
+    <h1>CONTACTS</h1>
+    <p>
+      SALUUUUUUUUUUUUUUUUUT
+    </p>
+  </section>
+</div>
+
+<div  class="banniere bgdark">
+  <h1>FOOTER</h1>
+
+</div>
+
+
+</body>
+</html>
