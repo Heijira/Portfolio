@@ -9,6 +9,21 @@ body {
     margin-top: 1em;
   }
 }
+.redim{
+  margin-top: 4.7em;
+  margin-left: 11em;
+  opacity: 0.7;
+  width: 75px;
+  height: 75px;
+}
+.redim-deux{
+  margin-top: 2em;
+}
+
+
+.bgcol{
+  background-color: red;
+}
   #u1{
       background-image: url(../img/ban1.jpg);
   }
@@ -18,6 +33,13 @@ body {
   #u4{
       background-image: url(../img/ban3.jpg);
   }
+  .aze1{
+    background-color: red;
+  }
+  .nav-cv{
+    display: flex;
+    justify-content: flex-start;
+  }
   .clear{
     position: relative;
       z-index: 10000;
@@ -26,10 +48,7 @@ body {
       -o-box-shadow: 0px 1px 2.5px 2px #656565;
       box-shadow: 0px 1px 2.5px 2px #656565;
       filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=2.5);
-      background-color: #f9f9f9;
-      .test{
-        background-color: #a9a9a9;
-      }
+      background-color: #f5f5f5;
           h1{
             color: #444;
             text-align: center;
@@ -60,9 +79,17 @@ body {
         }
         li{
           text-align: center;
+          list-style: none;
+        }
+        .cv-hover:hover{
+          cursor: pointer;
+        }
+        .navbar {
+          border-radius: 0px;
+          border:0px;
         }
         .marg{
-          margin-top: 10em;
+          padding-top: 5em;
         }
         .img1{
           z-index: 0;
@@ -83,7 +110,7 @@ body {
           background-size: cover;
         }
     .banniere{
-      height: 40%;
+      height: 70%;
       width: 100%;
     }
     .container{
