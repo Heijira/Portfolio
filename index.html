@@ -20,10 +20,6 @@
   <body>
 
     <!-- ___________________________________________________________________ -->
-    <!-- ___________________________________________________________________ -->
-    <!-- ___________________________________________________________________ -->
-    <!-- ___________________________________________________________________ -->
-    <!-- ___________________________________________________________________ -->
 
 <!-- On créé le futur carousel grace à une balise HEADER -->
 <header class="carousel slide" id="carousel1">
@@ -75,10 +71,18 @@
 <!-- ___________________________________________________________________ -->
 <!-- ___________________________________________________________________ -->
 
+<!-- ___________________________________________________________________ -->
+
+<!-- On créé le carousel pour switcher de contenu en fonction du menu de nav ! -->
+
 <div class="carousel slide cv clear" id="carousel2">
 
+  <!-- Création du menu slide à gauche, qui s'ouvre au clic de "Profil" -->
+
   <div id="mySidenav" class="sidenav">
+    <!-- On apelle la fonction closeNav au clic -->
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <!-- On écrit le contenu qui sera à l'intérieur du menu slide de gauche... -->
      <h3>Vincent Feger</h3>
      <h4>Développeur web en formation</h4>
      <ul>
@@ -86,22 +90,30 @@
        <li>Ville : Nîmes</li>
      </ul>
   </div>
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<div id="main">
+                          <!-- FIN DU CONTENU DU SLIDE -->
 
+
+    <!-- Menu de nav de la section CV ! -->
+
+<div>
+    <!-- La classe bootstrap navbar-inverse attribue une couleur sombre au menu de nav  -->
   <nav class="navbar-inverse">
     <div class="container-fluid">
       <ul class="nav navbar-nav nav-cv">
+        <!-- L'item PROFIL est un bouton qui ouvre le slidenav au clic -->
         <li class="cv-hover"><a onclick="openNav()">Profil</a></li>
-        <li><a> / </a></li>
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
+
+          <!-- Les 4 items exp/form/comp/loisirs Servent à contrler le carousel du cv -->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="0" class="active">Experiences</a></li>
-        <li><a> / </a></li>
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="1" class="">Formations</a></li>
-        <li><a> / </a></li>
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="2" class="">Compétences</a></li>
-        <li><a> / </a></li>
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="3" class="">Loisirs/Voyages</a></li>
-        <li><a> / </a></li>
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
+          <!-- L'item Languages/skills amène à l'ancre de la banniere juste en dessous de la section CV -->
         <li class="cv-hover"><a href="#skills" class="js-scrollTo">Languages/Skills</a></li>
       </ul>
     </div>
@@ -109,7 +121,7 @@
 
       <div class="carousel-inner">
           <div class="item active">
-            <!-- __________Section Experience__________ !! -->
+            <!-- __________Section CV: Experience__________ !! -->
 
                 <section class="marg test">
                     <div class="col-sm-6">
@@ -169,7 +181,7 @@
           </div>
 
           <div class="item">
-            <!-- __________Section Formation__________ !! -->
+            <!-- __________Section CV: Formation__________ !! -->
             <section class="marg">
               <div class="col-sm-6">
                       <p>
@@ -206,7 +218,7 @@
           </div>
 
           <div class="item">
-            <!-- __________Section Compétences__________ !! -->
+            <!-- __________Section CV: Compétences__________ !! -->
             <section class="marg">
                 <div class="col-sm-6">
                     <p>
@@ -231,7 +243,7 @@
           </div>
 
           <div class="item">
-            <!-- __________Section Loisirs/Voyages__________ !! -->
+            <!-- __________Section CV: Loisirs/Voyages__________ !! -->
             <section class="marg">
                     <div class="col-sm-6">
                         <p>
@@ -250,11 +262,11 @@
 
           </div>
       </div>
-
   </div>
 </div>
 
 
+        <!-- Bannière avec les images des différents languages -->
 
 <div data-stellar-background-ratio="0.5" class="banniere img1" id="skills">
 
@@ -270,9 +282,12 @@
 
 </div>
 
+                              <!-- section Work ! -->
+
 <div class="container clear bg2" id="work">
 
   <section>
+
     <h1>WORK</h1>
     <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
     <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
@@ -286,7 +301,9 @@
     <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
     <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
     <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
+
 </section>
+
 </div>
 
 <div data-stellar-background-ratio="0.5" class="banniere img2"></div>

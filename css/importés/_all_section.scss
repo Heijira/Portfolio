@@ -1,0 +1,25 @@
+.clear{
+    position: relative;
+    -moz-box-shadow: 0px 1px 2.5px 2px #656565;
+    -webkit-box-shadow: 0px 1px 2.5px 2px #656565;
+    -o-box-shadow: 0px 1px 2.5px 2px #656565;
+    box-shadow: 0px 1px 2.5px 2px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=2.5);
+    background-color: #f5f5f5;
+        h1{
+          color: #444;
+          text-align: center;
+          margin-top: 1em;
+        }
+        h2{
+          color:#444;
+          margin-left: 4em;
+        }
+        p{
+          color: #444;
+        }
+}
+
+.marg{
+  padding-top: 5em;
+}
