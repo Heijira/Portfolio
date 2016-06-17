@@ -4,49 +4,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Vincent Feger</title>
-    <!-- Bootstrap -->
+    <!-- Bootstrap _____________________________________________________________-->
     <link rel="stylesheet" href="./ext/bootstrap.css">
-    <!-- Mon CSS -->
+    <!-- Mon CSS _______________________________________________________________-->
     <link rel="stylesheet" href="./css/main.css">
-    <!-- jQuery -->
+    <!-- jQuery ________________________________________________________________-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>    <!-- Jbootstrap -->
     <script src="./ext/bootstrap.js"></script>
     <script src="js/myscript.js"></script>
-    <!-- Stellar -->
+    <!-- Stellar _______________________________________________________________-->
     <script type="text/javascript" src="js/jquery.stellar.js"></script>
     </head>
 
 
   <body>
 
-    <!-- ___________________________________________________________________ -->
+    <!-- _______________________________________________________________________ -->
 
-<!-- On créé le futur carousel grace à une balise HEADER -->
+<!-- On créé le futur carousel grace à une balise HEADER _______________________-->
 <header class="carousel slide" id="carousel1">
-<!-- On créé des petit point/cercles, qui slident les images -->
+<!-- On créé des petit point/cercles, qui slident les images ___________________-->
   <ul class="carousel-indicators"><!--On remplace les numéro de liste grace à une classe bootstrap-->
-<!-- On créé autant de petites boules, que de sections et d'images à slider -->
+<!-- On créé autant de petites boules, que de sections et d'images à slider ____-->
     <li data-slide-to="0" class="active"></li>
     <li data-slide-to="1"></li>
     <li data-slide-to="2"></li>
   </ul>
 
     <div class="carousel-inner">
-<!--Div avec une background img 1-->
+<!--Div avec une background img 1_______________________________________________-->
 <div class="item active">
   <div class="resize js-scrollTo" href=".cv" id="u1"></div>
     <div class="carousel-caption">
       <h2>CV</h2>
     </div>
 </div>
-<!--Div avec une background img 2-->
+<!--Div avec une background img 2_______________________________________________-->
 <div class="item">
   <div class="resize js-scrollTo" href="#work" id="u2"></div>
     <div class="carousel-caption">
       <h2>WORK</h2>
     </div>
 </div>
-<!--Div avec une background img 3-->
+<!--Div avec une background img 3_______________________________________________-->
 <div class="item">
   <div class="resize js-scrollTo" href="#contacts" id="u4"></div>
     <div class="carousel-caption">
@@ -55,64 +55,76 @@
 </div>
 </div>
 
-<!-- On créé 1 flèche vers la gauche qui slidera vers la gauche -->
+<!-- On créé 1 flèche vers la gauche qui slidera vers la gauche ________________-->
   <a class="left carousel-control" href="#carousel1" data-slide="prev">
     <span class="icon-prev"></span>
   </a>
-<!-- On créé 1 flèche vers la droite qui slidera vers la droite -->
+<!-- On créé 1 flèche vers la droite qui slidera vers la droite ________________-->
   <a class="right carousel-control" href="#carousel1" data-slide="next">
     <span class="icon-next"></span>
   </a>
 
 </header>
-<!-- ___________________________________________________________________ -->
-<!-- ___________________________________________________________________ -->
-<!-- ___________________________________________________________________ -->
-<!-- ___________________________________________________________________ -->
-<!-- ___________________________________________________________________ -->
+<!--____________________________________________________________________________-->
+<!--____________________________________________________________________________-->
+<!--____________________________________________________________________________-->
+<!--____________________________________________________________________________-->
+<!--____________________________________________________________________________-->
 
 <!-- ___________________________________________________________________ -->
 
-<!-- On créé le carousel pour switcher de contenu en fonction du menu de nav ! -->
+<!-- On créé le carousel pour switcher de contenu en fonction du menu de nav ! _-->
 
 <div class="carousel slide cv clear" id="carousel2">
 
-  <!-- Création du menu slide à gauche, qui s'ouvre au clic de "Profil" -->
+  <!-- Création du menu slide, qui s'ouvre au clic de "Profil" ________-->
 
   <div id="mySidenav" class="sidenav">
-    <!-- On apelle la fonction closeNav au clic -->
+    <!-- On apelle la fonction closeNav au clic ________________________________-->
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-     <!-- On écrit le contenu qui sera à l'intérieur du menu slide de gauche... -->
-     <h3>Vincent Feger</h3>
-     <h4>Développeur web en formation</h4>
+     <!-- On écrit le contenu qui sera à l'intérieur du menu slide de gauche..._-->
+     <h1>Vincent Feger</h1>
+     <h3>Développeur web en formation</h3>
      <ul>
-       <li>Âge : 22 ans</li>
-       <li>Ville : Nîmes</li>
+       <li class="col-sm-4">Âge : 22 ans</li>
+       <li class="col-sm-4">Ville : Nîmes</li>
+       <li class="col-sm-4">Adresse E-mail : vince.be.web@gmail.com</li>
      </ul>
+          <p class="col-sm-6">
+              Passionné d'informatique depuis l'obtention de mon premier PC, j'ai toujours aimé chercher à comprendre "comment" les choses fonctionnent.
+              J'ai appris le guitare de manière autodidacte et je suis aujourd'hui compositeur ainsi qu'interprete dans un groupe.
+              J'ai ensuite découvert les joies de coder et développer des sites et applications.
+              Je suis actuellement en formation chez BEWEB à LUNEL.
+          </p>
+          <p class ="col-sm-6">
+              Mes objectif ? j'en ai vraiment beaucoup !
+              Être mon propre patron, exprimer ma créativité à travers mon travail, réussir à méanger le monde de la musique et le développement, me démarquer de la concurence, et pourquoi pas un jour developper des jeux vidéos ? (un rêve d'enfance !)
+          </p>
   </div>
-                          <!-- FIN DU CONTENU DU SLIDE -->
+
+                          <!-- FIN DU CONTENU DU SLIDE__________________________-->
 
 
-    <!-- Menu de nav de la section CV ! -->
+    <!-- Menu de nav de la section CV ! ________________________________________-->
 
 <div>
     <!-- La classe bootstrap navbar-inverse attribue une couleur sombre au menu de nav  -->
   <nav class="navbar-inverse">
     <div class="container-fluid">
       <ul class="nav navbar-nav nav-cv">
-        <!-- L'item PROFIL est un bouton qui ouvre le slidenav au clic -->
+        <!-- L'item PROFIL est un bouton qui ouvre le slidenav au clic _________-->
         <li class="cv-hover"><a onclick="openNav()">Profil</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
 
           <!-- Les 4 items exp/form/comp/loisirs Servent à contrler le carousel du cv -->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="0" class="active">Experiences</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="1" class="">Formations</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="2" class="">Compétences</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
         <li class="cv-hover"><a data-target="#carousel2" data-slide-to="3" class="">Loisirs/Voyages</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem -->
+          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
           <!-- L'item Languages/skills amène à l'ancre de la banniere juste en dessous de la section CV -->
         <li class="cv-hover"><a href="#skills" class="js-scrollTo">Languages/Skills</a></li>
       </ul>
@@ -266,49 +278,69 @@
 </div>
 
 
-        <!-- Bannière avec les images des différents languages -->
+        <!-- Bannière avec les images des différents languages _________________-->
 
-<div data-stellar-background-ratio="0.5" class="banniere img1" id="skills">
-
+<div data-stellar-background-ratio="0.5" class="container img1" id="skills">
+    <!-- image html -->
   <div class="col-sm-4 "><img class="redim" src="./img/html5-couleur.png" alt="" /></div>
+    <!-- image css -->
   <div class="col-sm-4 "><img class="redim" src="./img/css3-couleur.png" alt="" /></div>
+    <!-- image javascript -->
   <div class="col-sm-4 "><img class="redim" src="./img/JS-couleur.png" alt="" /></div>
+    <!-- image php -->
   <div class="col-sm-4 "><img class="redim" src="./img/php-couleur.png" alt="" /></div>
+    <!-- image mysql -->
   <div class="col-sm-4 "><img class="redim" src="./img/sql-couleur_03.png" alt="" /></div>
+    <!-- image bootsrap -->
   <div class="col-sm-4 "><img class="redim" src="./img/bootstrap.png" alt="" /></div>
+    <!-- image symphony -->
   <div class="col-sm-4 "><img class="redim" src="./img/symphony-couleur.png" alt="" /></div>
+    <!-- image Jquery -->
   <div class="col-sm-4 "><img class="redim" src="./img/jquery-couleur.png" alt="" /></div>
+    <!-- image angular js -->
   <div class="col-sm-4 "><img class="redim" src="./img/angular-js-color.png" alt="" /></div>
 
 </div>
 
-                              <!-- section Work ! -->
+      <!-- section Work ! ______________________________________________________-->
 
 <div class="container clear bg2" id="work">
 
   <section>
 
-    <h1>WORK</h1>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
-    <div class="col-sm-2"><a><img class="img-responsive redim-deux" src="./img/carre.png" alt="" /></a></div>
+  <h1>WORK</h1>
+
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
+    <img class="col-sm-2 img-responsive redim-deux" src="./img/carre.png" alt="" />
 
 </section>
 
 </div>
 
+      <!--FIN section Work ! ___________________________________________________-->
+
+
+        <!-- Deuxieme Banniere ! _______________________________________________-->
+
 <div data-stellar-background-ratio="0.5" class="banniere img2"></div>
 
+        <!-- Fin deuxième bannière ! ___________________________________________-->
+
+
+    <!-- Section contacts ! ____________________________________________________-->
+
 <div class="container clear bg3" id="contacts">
+
   <section>
     <h1>CONTACTS</h1>
     <p>
@@ -317,12 +349,22 @@
   </section>
 </div>
 
+    <!-- Fin section contacts __________________________________________________-->
+
+
+  <!-- Troisième bannière ______________________________________________________-->
+
 <div data-stellar-background-ratio="0.5" class="banniere img3"></div>
 
+    <!-- Fin bannière __________________________________________________________-->
+
+      <!-- FOOTER !_____________________________________________________________-->
 <div  class="banniere">
   <h1>F00TER</h1>
 
 </div>
+
+<!-- Fin Footer !_______________________________________________________________-->
 
 
 </body>

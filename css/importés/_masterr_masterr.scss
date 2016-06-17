@@ -1,3 +1,4 @@
+// Les propriété dans HTML seront celles par défault !__________________________
 html,
 body {
     height: 100%;
@@ -13,13 +14,11 @@ body {
       }
       p {
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.0);
         padding: 3px;
         margin: 0 0 10px 0;
-        font-size: 18px;
-        color: black;
-      }
+        font-size: 18px;      }
 }
+// On attribue cette classe, si l'ont souhaite qu'un élément fasse la taille du viewPort
     .container{
       height: 100%;
       width: 100%;

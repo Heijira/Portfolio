@@ -1,26 +1,34 @@
+// Premiere banniere ! (parallax)_______________________________________________
 .img1{
   z-index: 0;
   background-image: url(../img/ban1.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
+
+// Deuxieme banniere ! (parallax)_______________________________________________
 .img2{
   z-index: 0;
   background-image: url(../img/ban2.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
+
+// Troisieme banniere ! (parallax)______________________________________________
 .img3{
   z-index: 0;
   background-image: url(../img/ban3.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
+
+// Taille des bannières_________________________________________________________
 .banniere{
 height: 70%;
 width: 100%;
 }
 
+// Redimensionnement des logo des languages !___________________________________
 .redim{
   margin-top: 4.7em;
   margin-left: 11em;
