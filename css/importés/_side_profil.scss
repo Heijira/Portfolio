@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.95);
-    overflow: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: .5s; /* 0.5 second transition effect to slide in the sidenav */
     color: #d1d1d1;
