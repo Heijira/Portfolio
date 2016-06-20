@@ -9,6 +9,7 @@
     //   });
     // });
 
+    new WOW().init();
 
     /* Open the sidenav */
     function openNav() {
