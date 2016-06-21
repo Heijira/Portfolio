@@ -6,16 +6,14 @@
     <meta name="author" content="Vincent Feger">
     <meta name="copyright" content="Vincent Feger">
     <title>Portfolio Vincent Feger</title>
-    <!-- Bootstrap _____________________________________________________________-->
-    <link rel="stylesheet" href="./ext/bootstrap.css">
-    <!-- Animate css -->
-    <link rel="stylesheet" href="./ext/animate-css.css">
+    <!-- Import Bootstrap AVANT le fichier css (afin de pouvoir overight) => a tester -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Import de Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Import de Bootstrap.js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- Mon CSS _______________________________________________________________-->
     <link rel="stylesheet" href="./css/main.css">
-    <!-- jQuery ________________________________________________________________-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>    <!-- Jbootstrap -->
-    <script src="./ext/bootstrap.js"></script>
-    <script type="text/javascript" src="./ext/wow.min.js"></script>
     <script src="js/myscript.js"></script>
     <!-- Stellar _______________________________________________________________-->
     <script type="text/javascript" src="ext/jquery.stellar.js"></script>
@@ -39,21 +37,21 @@
     <div class="carousel-inner">
 <!--Div avec une background img 1_______________________________________________-->
 <div class="item active">
-  <div class="resize js-scrollTo" href=".cv" id="u1"></div>
+  <a class="js-scrollTo" href=".cv" ><div class="resize" id="u1"></div></a>
     <div class="carousel-caption">
       <h2>CV</h2>
     </div>
 </div>
 <!--Div avec une background img 2_______________________________________________-->
 <div class="item">
-  <div class="resize js-scrollTo" href=".work" id="u2"></div>
+  <a class="js-scrollTo" href=".work"><div class="resize" id="u2"></div></a>
     <div class="carousel-caption">
       <h2>WORK</h2>
     </div>
 </div>
 <!--Div avec une background img 3_______________________________________________-->
 <div class="item">
-  <div class="resize js-scrollTo" href="#contacts" id="u4"></div>
+  <a class="js-scrollTo" href="#contacts"><div class="resize" id="u4"></div></a>
     <div class="carousel-caption">
       <h2>CONTACTS</h2>
     </div>
@@ -140,80 +138,91 @@
           <div class="item active">
             <!-- __________Section CV: Experience__________ !! -->
 
-                <section class="marg test wow fadeIn" data-wow-delay=".3s">
+                <section class="marg">
+                  <h3>Experiences</h3>
                     <div class="col-sm-6">
                             <p>
                         Juillet 2015: Centre aéré Casa Nostra ­ Jonquières Saint Vincent (Gard)
+                        </p>
                                 <ul>
                                   <li>Responsable d'un groupe d'enfants de 5 à 12 ans</li>
                                   <li>Organisation du spectacle du centre</li>
                                 </ul>
-                            </p>
+
 
                             <p>
                         Décembre 2014: Centre aéré Jeanne d'Arc Nîmes (Gard)
+                          </p>
                                 <ul>
                                   <li>responsable d'un groupe d'enfants de 5 à 12 ans</li>
                                 </ul>
-                            </p>
+
 
                             <p>
                         Avril 2013: Préfecture du Gard
+                          </p>
                                 <ul>
                                   <li>Agent vacataire Service des permis de conduire</li>
                                 </ul>
-                            </p>
+
 
                             <p>
                         Octobre 2012: Préfecture du Gard
+                        </p>
                                 <ul>
                                   <li>Agent vacataire Service des cartes d'identité/passeports</li>
                                 </ul>
-                            </p>
+
                   </div>
 
                   <div class="col-sm-6">
                             <p>
                         Août/sept: 2011 Cafeteria ERIS/Carrefour Nîmes
+                        </p>
                                <ul>
                                 <li>Employé polyvalent : service, plonge</li>
                               </ul>
-                          </p>
+
 
                           <p>
                         Août 2009: Hôtel Mercure Avignon (Vaucluse)
+                        </p>
                               <ul>
                                 <li>Employé de cuisine (stage)</li>
                               </ul>
-                          </p>
+
 
                           <p>
                         Octobre 2008: Hotel Vatel ­ Nîmes (Gard)
+                        </p>
                               <ul>
                                 <li>Employé de cuisine (stage)</li>
                               </ul>
-                          </p>
+
                   </div>
                 </section>
           </div>
 
           <div class="item">
             <!-- __________Section CV: Formation__________ !! -->
-            <section class="marg wow fadeIn" data-wow-delay=".3s">
-              <div class="col-sm-6">
+            <section class="marg">
+              <h3>Formations</h3>
+                <div class="col-sm-6">
                       <p>
                         2014/2015: IFAC
+                      </p>
                           <ul>
                             <li>BAFA formation générale + approfondissement</li>
                           </ul>
-                      </p>
+
 
                       <p>
                         Novembre 2014: Croix­Rouge française Nîmes (Gard)
+                      </p>
                            <ul>
                             <li>Brevet de secourisme (PSC1 ­ Prévention et Secours Civique de niveau 1</li>
                           </ul>
-                      </p>
+
 
                       <p>
                         Juin-­Déc 2014: Remise à niveau scolaire (BAC)
@@ -221,12 +230,12 @@
               </div>
               <div class="col-sm-6">
                       <p>
-
                         2010-2011 IMFP Salon de Provence
+                        </p>
                           <ul>
                             <li>Formation musicale</li>
                           </ul>
-                      </p>
+
                       <p>
                         2011­-Aujourd'hui: Formation musicale autodidacte
                       </p>
@@ -236,7 +245,8 @@
 
           <div class="item">
             <!-- __________Section CV: Compétences__________ !! -->
-            <section class="marg wow fadeIn" data-wow-delay=".3s">
+            <section class="marg">
+              <h3>Compétences</h3>
                 <div class="col-sm-6">
                     <p>
                       BAFA (Brevet d’Aptitude aux Fonctions d’Animateurs)
@@ -261,8 +271,9 @@
 
           <div class="item">
             <!-- __________Section CV: Loisirs/Voyages__________ !! -->
-            <section class="marg wow fadeIn" data-wow-delay=".3s">
-                    <div class="col-sm-6">
+            <section class="marg">
+              <h3>Loisirs/Voyages</h3>
+                <div class="col-sm-6">
                         <p>
                           Leader/Compositeur/Interprète dans un groupe de Metal (Concerts en France, CD produit)
                         </p>
@@ -315,7 +326,7 @@
       <!-- section Work ! ______________________________________________________-->
 
 <section class="container work clear">
-  <h1 class="titre-works">WORKS</h1>
+  <h2 class="titre-works">WORKS</h2>
     <div class="col-md-12" id="bordure-works">
       <div class="">
         <div id="myCarousel" class="carousel slide">
@@ -326,7 +337,7 @@
             <div class="row">
                 <div class="miniatures col-sm-4"><a href="#"><img src="img/bg1.jpg" alt="Image" class="img-responsive miniatures"></a>
                   </div>
-                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg2.jpg"alt="Image" class="img-responsive miniatures"></a>
+                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg2.jpg" alt="Image" class="img-responsive miniatures"></a>
                   </div>
                 <div class="miniatures col-sm-4"><a href="#"><img src="img/bg3.jpg" alt="Image" class="img-responsive miniatures"></a>
                   </div>
@@ -374,7 +385,7 @@
 <div class="container clear bg3" id="contacts">
 
   <section>
-    <h1>CONTACTS</h1>
+    <h2>CONTACTS</h2>
     <p class="wow bounce" data-wow-duration="3s" data-wow-delay="500ms">
       SALUUUUUUUUUUUUUUUUUT
     </p>
@@ -392,16 +403,16 @@
 
       <!-- FOOTER !_____________________________________________________________-->
 <div  class="footer-dim dark">
-  <article class="col-sm-6">
+  <div class="col-sm-6">
     <p>
       &copy;Vincent Feger 2016
     </p>
-  </article>
-  <article class="col-sm-6">
+  </div>
+  <div class="col-sm-6">
     <p>
-            Portfolio v0.7
+      Portfolio v0.7
     </p>
-  </article>
+  </div>
 
 </div>
 
