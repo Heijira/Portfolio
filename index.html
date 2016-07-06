@@ -15,59 +15,32 @@
     <!-- Mon CSS _______________________________________________________________-->
     <link rel="stylesheet" href="./css/main.css">
     <script src="js/myscript.js"></script>
-    <!-- Stellar _______________________________________________________________-->
-    <script type="text/javascript" src="ext/jquery.stellar.js"></script>
-    </head>
+</head>
 
 
   <body>
 
-    <!-- _______________________________________________________________________ -->
+  <header class="container">
+    <div class="container img-somb">
+    <div class="row">
+      <div class="col-lg-8"></div>
+      <div class="col-lg-4"><p class="logos opacity">
+        BADP
+      </p></div>
+    <div class="">
+        <div class="marg-title">
+            <h1 class="col-lg-12 opacity">Vincent</h1>
+            <h1 class="col-lg-12 opacity">Feger</h1>
 
-<!-- On créé le futur carousel grace à une balise HEADER _______________________-->
-<header class="carousel slide" id="carousel1">
-<!-- On créé des petit point/cercles, qui slident les images ___________________-->
-  <ul class="carousel-indicators"><!--On remplace les numéro de liste grace à une classe bootstrap-->
-<!-- On créé autant de petites boules, que de sections et d'images à slider ____-->
-    <li data-slide-to="0" class="active"></li>
-    <li data-slide-to="1"></li>
-    <li data-slide-to="2"></li>
-  </ul>
-
-    <div class="carousel-inner">
-<!--Div avec une background img 1_______________________________________________-->
-<div class="item active">
-  <a class="js-scrollTo" href=".cv" ><div class="resize" id="u1"></div></a>
-    <div class="carousel-caption">
-      <h2>CV</h2>
+      </div>
     </div>
-</div>
-<!--Div avec une background img 2_______________________________________________-->
-<div class="item">
-  <a class="js-scrollTo" href=".work"><div class="resize" id="u2"></div></a>
-    <div class="carousel-caption">
-      <h2>WORK</h2>
-    </div>
-</div>
-<!--Div avec une background img 3_______________________________________________-->
-<div class="item">
-  <a class="js-scrollTo" href="#contacts"><div class="resize" id="u4"></div></a>
-    <div class="carousel-caption">
-      <h2>CONTACTS</h2>
-    </div>
-</div>
-</div>
 
-<!-- On créé 1 flèche vers la gauche qui slidera vers la gauche ________________-->
-  <a class="left carousel-control" href="#carousel1" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-<!-- On créé 1 flèche vers la droite qui slidera vers la droite ________________-->
-  <a class="right carousel-control" href="#carousel1" data-slide="next">
-    <span class="icon-next"></span>
-  </a>
 
-</header>
+    </div>
+
+  </div>
+  <h3 class="textblanc">Developpeur Web, création de sites et applications web</h3>
+  </header>
 <!--____________________________________________________________________________-->
 <!--____________________________________________________________________________-->
 <!--____________________________________________________________________________-->
@@ -78,7 +51,7 @@
 
 <!-- On créé le carousel pour switcher de contenu en fonction du menu de nav ! _-->
 
-<div class="carousel slide cv clear" id="carousel2">
+<div class="container carousel slide cv clear" id="carousel2">
 
   <!-- Création du menu slide, qui s'ouvre au clic de "Profil" ________-->
 
@@ -89,9 +62,8 @@
      <h1>Vincent Feger</h1>
      <h3>Développeur web en formation</h3>
      <ul>
-       <li class="col-sm-4">Âge : 22 ans</li>
-       <li class="col-sm-4">Ville : Nîmes</li>
-       <li class="col-sm-4">Adresse E-mail : vince.be.web@gmail.com</li>
+       <li class="col-sm-6">Ville : Nîmes</li>
+       <li class="col-sm-6">Adresse E-mail : vince.be.web@gmail.com</li>
      </ul>
           <p class="col-sm-6">
               Passionné d'informatique depuis l'obtention de mon premier PC, j'ai toujours aimé chercher à comprendre "comment" les choses fonctionnent.
@@ -110,312 +82,97 @@
 
     <!-- Menu de nav de la section CV ! ________________________________________-->
 
-<div>
-    <!-- La classe bootstrap navbar-inverse attribue une couleur sombre au menu de nav  -->
-  <nav class="navbar-inverse">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav nav-cv">
-        <!-- L'item PROFIL est un bouton qui ouvre le slidenav au clic _________-->
-        <li class="cv-hover"><a onclick="openNav()">Profil</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
+    <!-- nav -->
 
-          <!-- Les 4 items exp/form/comp/loisirs Servent à contrler le carousel du cv -->
-        <li class="cv-hover"><a data-target="#carousel2" data-slide-to="0" class="active">Experiences</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
-        <li class="cv-hover"><a data-target="#carousel2" data-slide-to="1" class="">Formations</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
-        <li class="cv-hover"><a data-target="#carousel2" data-slide-to="2" class="">Compétences</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
-        <li class="cv-hover"><a data-target="#carousel2" data-slide-to="3" class="">Loisirs/Voyages</a></li>
-          <li><a> / </a></li><!-- Séparation / decoration entre les ListItem ___-->
-          <!-- L'item Languages/skills amène à l'ancre de la banniere juste en dessous de la section CV -->
-        <li class="cv-hover"><a href="#skills" class="js-scrollTo">Languages/Skills</a></li>
-      </ul>
-    </div>
-  </nav>
+      <nav class="navbar navbar-inverse nav-dim">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <!-- Petits logos qui serviront pour le menu responsive_____________________-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#maBarreDeNav">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="maBarreDeNav">
+            <!-- Liens vers les sections ! _______________________________________-->
+            <ul class="nav navbar-nav">
+              <li class=""><a data-target="#carousel2" data-slide-to="0" class="active">Formation</a></li>
+              <li class=""><a data-target="#carousel2" data-slide-to="1" class="">Skill</a></li>
+              <li class=""><a data-target="#carousel2" data-slide-to="2" class="">Works</a></li>
+              <li class=""><a data-target="#carousel2" data-slide-to="3" class="">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
 
       <div class="carousel-inner">
+
           <div class="item active">
-            <!-- __________Section CV: Experience__________ !! -->
-
-                <section class="marg">
-                  <h3>Experiences</h3>
-                    <div class="col-sm-6">
-                            <p>
-                        Juillet 2015: Centre aéré Casa Nostra ­ Jonquières Saint Vincent (Gard)
-                        </p>
-                                <ul>
-                                  <li>Responsable d'un groupe d'enfants de 5 à 12 ans</li>
-                                  <li>Organisation du spectacle du centre</li>
-                                </ul>
-
-
-                            <p>
-                        Décembre 2014: Centre aéré Jeanne d'Arc Nîmes (Gard)
-                          </p>
-                                <ul>
-                                  <li>responsable d'un groupe d'enfants de 5 à 12 ans</li>
-                                </ul>
-
-
-                            <p>
-                        Avril 2013: Préfecture du Gard
-                          </p>
-                                <ul>
-                                  <li>Agent vacataire Service des permis de conduire</li>
-                                </ul>
-
-
-                            <p>
-                        Octobre 2012: Préfecture du Gard
-                        </p>
-                                <ul>
-                                  <li>Agent vacataire Service des cartes d'identité/passeports</li>
-                                </ul>
-
-                  </div>
-
-                  <div class="col-sm-6">
-                            <p>
-                        Août/sept: 2011 Cafeteria ERIS/Carrefour Nîmes
-                        </p>
-                               <ul>
-                                <li>Employé polyvalent : service, plonge</li>
-                              </ul>
-
-
-                          <p>
-                        Août 2009: Hôtel Mercure Avignon (Vaucluse)
-                        </p>
-                              <ul>
-                                <li>Employé de cuisine (stage)</li>
-                              </ul>
-
-
-                          <p>
-                        Octobre 2008: Hotel Vatel ­ Nîmes (Gard)
-                        </p>
-                              <ul>
-                                <li>Employé de cuisine (stage)</li>
-                              </ul>
-
-                  </div>
-                </section>
-          </div>
-
-          <div class="item">
             <!-- __________Section CV: Formation__________ !! -->
             <section class="marg">
               <h3>Formations</h3>
-                <div class="col-sm-6">
+              <div class="row">
                       <p>
-                        2014/2015: IFAC
+                        J'ai débuté le code à BEWEB, une formation lancée par Fondespierre et Simplon.
                       </p>
-                          <ul>
-                            <li>BAFA formation générale + approfondissement</li>
-                          </ul>
-
-
                       <p>
-                        Novembre 2014: Croix­Rouge française Nîmes (Gard)
-                      </p>
-                           <ul>
-                            <li>Brevet de secourisme (PSC1 ­ Prévention et Secours Civique de niveau 1</li>
-                          </ul>
-
-
-                      <p>
-                        Juin-­Déc 2014: Remise à niveau scolaire (BAC)
-                      </p>
-              </div>
-              <div class="col-sm-6">
-                      <p>
-                        2010-2011 IMFP Salon de Provence
-                        </p>
-                          <ul>
-                            <li>Formation musicale</li>
-                          </ul>
-
-                      <p>
-                        2011­-Aujourd'hui: Formation musicale autodidacte
+                        Cette formation a duré 6 mois.
                       </p>
               </div>
             </section>
           </div>
 
           <div class="item">
-            <!-- __________Section CV: Compétences__________ !! -->
+            <!-- __________Section Skills__________ !! -->
             <section class="marg">
               <h3>Compétences</h3>
                 <div class="col-sm-6">
-                    <p>
-                      BAFA (Brevet d’Aptitude aux Fonctions d’Animateurs)
-                    </p>
-                        <p>
-                          Brevet de secourisme (PSC1 ­ Prévention et Secours Civique de niveau 1)
-                        </p>
-                            <p>
-                              Connaissance des logiciels de bureautique ainsi que de certains logiciels de musique (Cubase 5/6/7, Notions Pro Tools, Editeurs MIDI, Samples)
-                            </p>
+
                 </div>
                 <div class="col-sm-6">
-                    <p>
-                      Langues Anglais : courant
-                    </p>
-                          <p>
-                            Permis de conduire B
-                          </p>
+
                 </div>
             </section>
           </div>
+          <!-- Section Work -->
+          <div class="item">
+            <section class="marg">
+              <h2 class="">Works</h2>
+
+            </section>
+          </div>
+
+          <!-- Section COntacts -->
 
           <div class="item">
-            <!-- __________Section CV: Loisirs/Voyages__________ !! -->
             <section class="marg">
-              <h3>Loisirs/Voyages</h3>
-                <div class="col-sm-6">
-                        <p>
-                          Leader/Compositeur/Interprète dans un groupe de Metal (Concerts en France, CD produit)
-                        </p>
-                            <p>
-                              Mixage son
-                            </p>
-                      </div>
-                      <div class="col-sm-6">
-                                <p>
-                                  Voyages Afrique de l'Ouest (Guinée Conakry/Burkina Faso/Togo) expatrié de 1993 à 2006
-                                </p>
-                      </div>
+              <h2 class="">Contacts</h2>
+
             </section>
-
           </div>
+
       </div>
   </div>
 </div>
 
-
-        <!-- Bannière avec les images des différents languages _________________-->
-
-<div data-stellar-background-ratio="0.5" class="container img1" id="skills">
-    <!-- image html -->
-
-<div class="img-mrg">
-
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">HTML5</h5><img class="redim" src="./img/html5-couleur.png" alt="" /></div>
-    <!-- image css -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">CSS3</h5><img class="redim" src="./img/css3-couleur.png" alt="" /></div>
-    <!-- image javascript -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">JavaScript</h5><img class="redim" src="./img/JS-couleur.png" alt="" /></div>
-    <!-- image php -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">PHP</h5><img class="redim" src="./img/php-couleur.png" alt="" /></div>
-    <!-- image mysql -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">MySQL</h5><img class="redim" src="./img/sql-couleur_03.png" alt="" /></div>
-    <!-- image bootsrap -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">Bootstrap</h5><img class="redim" src="./img/bootstrap.png" alt="" /></div>
-    <!-- image symphony -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">Symphony</h5><img class="redim" src="./img/symphony-couleur.png" alt="" /></div>
-    <!-- image Jquery -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">Jquery</h5><img class="redim" src="./img/jquery-couleur.png" alt="" /></div>
-    <!-- image angular js -->
-  <div class="col-sm-4 wow fadeIn" data-wow-delay=".3s"><h5 class="h-5">AngularJS</h5><img class="redim" src="./img/angular-js-color.png" alt="" /></div>
-
-</div>
-
-</div>
-
-      <!-- section Work ! ______________________________________________________-->
-
-<section class="container work clear">
-  <h2 class="titre-works">WORKS</h2>
-    <div class="col-md-12" id="bordure-works">
-      <div class="">
-        <div id="myCarousel" class="carousel slide">
-
-      <!-- Items du carousel____________________________________________________ -->
-      <div class="carousel-inner">
-        <div class="item active">
-            <div class="row">
-                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg1.jpg" alt="Image" class="img-responsive miniatures"></a>
-                  </div>
-                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg2.jpg" alt="Image" class="img-responsive miniatures"></a>
-                  </div>
-                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg3.jpg" alt="Image" class="img-responsive miniatures"></a>
-                  </div>
-            </div>
-        </div>
-        <!-- Items du carousel__________________________________________________ -->
-        <div class="item">
-            <div class="row">
-                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg1.jpg" alt="Image" class="img-responsive miniatures"></a>
-                  </div>
-                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg2.jpg" alt="Image" class="img-responsive miniatures"></a>
-                  </div>
-                <div class="miniatures col-sm-4"><a href="#"><img src="img/bg3.jpg" alt="Image" class="img-responsive miniatures"></a>
-                  </div>
-            </div>
-          </div>
-  </div>
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-          </a>
-
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-</section>
-
-<!-- </div> -->
-
-      <!--FIN section Work ! ___________________________________________________-->
-
-
-        <!-- Deuxieme Banniere ! _______________________________________________-->
-
-<div data-stellar-background-ratio="0.5" class="banniere img2"></div>
-
-        <!-- Fin deuxième bannière ! ___________________________________________-->
-
-
-    <!-- Section contacts ! ____________________________________________________-->
-
-<div class="container clear bg3" id="contacts">
-
-  <section>
-    <h2>CONTACTS</h2>
-    <p class="wow bounce" data-wow-duration="3s" data-wow-delay="500ms">
-      SALUUUUUUUUUUUUUUUUUT
-    </p>
-  </section>
-</div>
-
-    <!-- Fin section contacts __________________________________________________-->
-
-
-  <!-- Troisième bannière ______________________________________________________-->
-
-<div data-stellar-background-ratio="0.5" class="banniere img3"></div>
-
-    <!-- Fin bannière __________________________________________________________-->
 
       <!-- FOOTER !_____________________________________________________________-->
-<div  class="footer-dim dark">
-  <div class="col-sm-6">
-    <p>
-      &copy;Vincent Feger 2016
-    </p>
-  </div>
-  <div class="col-sm-6">
-    <p>
-      Portfolio v0.7
-    </p>
-  </div>
-
-</div>
-
+  <footer class="footer-dim dark">
+      <div class="col-sm-6">
+        <p>
+          &copy;Vincent Feger 2016
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <p>
+          Portfolio v0.7
+        </p>
+      </div>
+  </footer>
 <!-- Fin Footer !_______________________________________________________________-->
 
 

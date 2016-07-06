@@ -1,6 +1,20 @@
 // Les propriété dans HTML seront celles par défault !__________________________
+@font-face {
+  font-family: "icones";
+  src: url("../img/SocialType.ttf");
+}
+@font-face {
+  font-family: "griezmann";
+  src: url("../img/Hack-Regular.ttf");
+}
+.carousel{
+  background-color: rgba(50, 50, 50, 0.9);
+}
 html,
 body {
+  background-image: url(../img/forest.jpg);
+  background-size: cover;
+  background-attachment: fixed;
     height: 100%;
     width: 100%;
     -ms-overflow-style: none;
@@ -18,8 +32,3 @@ body {
         margin: 0 0 10px 0;
         font-size: 18px;      }
 }
-// On attribue cette classe, si l'ont souhaite qu'un élément fasse la taille du viewPort
-    .container{
-      height: 100%;
-      width: 100%;
-    }
