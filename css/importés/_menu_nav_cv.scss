@@ -1,9 +1,8 @@
 // La classe cv-hover permet au curseur de la souris de changer_________________
+
 .cv-hover:hover{
   cursor: pointer;
-  width: 100%;
 }
-
 // OverWrite de la classe bootstrap, parce que les border radius, c'est moche___
 .navbar {
   background-color: rgba(50, 50, 50, 0.0);

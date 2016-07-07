@@ -1,1 +1,35 @@
-// C0ming S00n
+.taille-logos{
+  font-size: 250px;
+}
+.fb{
+  color: #3b5998 ;
+}
+.twitter{
+  color:  #00aced ;
+}
+.linkedin{
+  color: #007bb6 ;
+}
+.mail{
+  color: #FD4949;
+}
+.fb:hover{
+  transition-duration: 0.7s;
+  transition-property: color;
+  color: #f9f9f9 ;
+}
+.twitter:hover{
+  transition-duration: 0.7s;
+  transition-property: color;
+  color:  #f9f9f9 ;
+}
+.linkedin:hover{
+  transition-duration: 0.7s;
+  transition-property: color;
+  color: #f9f9f9 ;
+}
+.mail:hover{
+  transition-duration: 0.7s;
+  transition-property: color;
+  color: #f9f9f9;
+}

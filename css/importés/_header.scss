@@ -2,6 +2,22 @@ header{
   background-image: url(../img/forest.jpg);
   background-size: cover;
 }
+a{
+  text-decoration: none !important ;
+  color: #f9f9f9 !important;
+}
+.logo1:hover{
+  color: rgba(59, 89, 152, 1)!important;
+}
+.logo2:hover{
+  color: rgba(85, 172, 238, 1)!important;
+}
+.logo3:hover{
+  color: rgba(0, 123, 181, 1)!important;
+}
+.logo4:hover{
+  color: rgba(0, 0, 0, 1)!important;
+}
 .opacity{
   text-transform: uppercase;
   font-family: "griezmann";
@@ -10,7 +26,7 @@ header{
 }
 .textblanc{
   color: #f9f9f9;
-  margin-top: -4%;
+  margin-top: -13%;
   opacity: 0.6;
 }
 .marg-title{
@@ -19,10 +35,4 @@ header{
 .img-somb{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-}
-.logos{
-  font-family: "icones";
-  font-size: 80px;
-  color: #f9f9f9;
-  opacity: 0.6;
 }

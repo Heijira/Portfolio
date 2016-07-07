@@ -2,6 +2,22 @@ header {
   background-image: url(../img/forest.jpg);
   background-size: cover; }
 
+a {
+  text-decoration: none !important;
+  color: #f9f9f9 !important; }
+
+.logo1:hover {
+  color: #3b5998 !important; }
+
+.logo2:hover {
+  color: #55acee !important; }
+
+.logo3:hover {
+  color: #007bb5 !important; }
+
+.logo4:hover {
+  color: black !important; }
+
 .opacity {
   text-transform: uppercase;
   font-family: "griezmann";
@@ -10,7 +26,7 @@ header {
 
 .textblanc {
   color: #f9f9f9;
-  margin-top: -4%;
+  margin-top: -13%;
   opacity: 0.6; }
 
 .marg-title {
@@ -20,29 +36,16 @@ header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4); }
 
-.logos {
-  font-family: "icones";
-  font-size: 80px;
-  color: #f9f9f9;
-  opacity: 0.6; }
-
-.dark {
-  position: relative;
-  -moz-box-shadow: 0px 1px 2.5px 2px #656565;
-  -webkit-box-shadow: 0px 1px 2.5px 2px #656565;
-  -o-box-shadow: 0px 1px 2.5px 2px #656565;
-  box-shadow: 0px 1px 2.5px 2px #656565; }
+.footer-dim {
+  height: 10%;
+  width: 100%; }
 
 footer {
-  background-color: rgba(50, 50, 50, 0.9); }
-
-.footer-dim {
-  height: 25%;
-  width: 100%; }
+  color: #f9f9f9;
+  padding-top: 1.5%; }
 
 .cv-hover:hover {
-  cursor: pointer;
-  width: 100%; }
+  cursor: pointer; }
 
 .navbar {
   background-color: rgba(50, 50, 50, 0);
@@ -50,8 +53,43 @@ footer {
   border: 0px;
   width: 100%; }
 
+.taille-logos {
+  font-size: 250px; }
+
+.fb {
+  color: #3b5998; }
+
+.twitter {
+  color: #00aced; }
+
+.linkedin {
+  color: #007bb6; }
+
+.mail {
+  color: #FD4949; }
+
+.fb:hover {
+  transition-duration: 0.7s;
+  transition-property: color;
+  color: #f9f9f9; }
+
+.twitter:hover {
+  transition-duration: 0.7s;
+  transition-property: color;
+  color: #f9f9f9; }
+
+.linkedin:hover {
+  transition-duration: 0.7s;
+  transition-property: color;
+  color: #f9f9f9; }
+
+.mail:hover {
+  transition-duration: 0.7s;
+  transition-property: color;
+  color: #f9f9f9; }
+
 .marg {
-  padding-top: 3em; }
+  padding-top: 1.5em; }
 
 li {
   text-align: center;
@@ -61,16 +99,15 @@ h3 {
   text-align: center;
   padding-bottom: 70px; }
 
-.titre-works {
-  margin-top: 1em;
-  margin-bottom: 1.2em; }
+.marge-skill img {
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 40px; }
 
-.carousel-control {
-  padding-top: 10%;
-  width: 5%; }
-
-.miniatures {
-  height: 250px; }
+.marg-work {
+  padding-top: 8%; }
 
 /* The side navigation menu */
 .sidenav {
@@ -150,8 +187,26 @@ section p {
 @font-face {
   font-family: "griezmann";
   src: url("../img/Hack-Regular.ttf"); }
+@font-face {
+  font-family: "payet";
+  src: url("../img/social_shapes.ttf"); }
 .carousel {
   background-color: rgba(50, 50, 50, 0.9); }
+
+.logos {
+  text-decoration: none;
+  font-family: "icones";
+  font-size: 70px;
+  color: #f9f9f9;
+  opacity: 0.7; }
+
+.logo-mail {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "payet";
+  font-size: 70px;
+  color: #f9f9f9;
+  opacity: 0.7; }
 
 html,
 body {
