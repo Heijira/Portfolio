@@ -1,8 +1,10 @@
+// La taille du footer(qui laisse apparaitre l'image de fond "claire")
   .footer-dim{
     height: 10%;
     width: 100%;
   }
-footer{
-  color: #f9f9f9;
-  padding-top: 1.5%;
-}
+  // On applique des propriétés au footer et à ses enfants
+  footer{
+    color: #f9f9f9;
+    padding-top: 1.5%;
+  }

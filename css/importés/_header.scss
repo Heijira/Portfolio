@@ -1,11 +1,23 @@
+// image de fond du header
 header{
   background-image: url(../img/forest.jpg);
   background-size: cover;
 }
+// on retire les décorations par défaut des liens, et on applique une couleur par défaut
 a{
   text-decoration: none !important ;
   color: #f9f9f9 !important;
 }
+// Logos réseaux sociaux dans le header de la page
+.logos{
+  float: right;
+  text-decoration: none;
+  font-family: "icones";// il s'agit de la police d'écriture qui donne le style "logo"
+  font-size: 70px;
+  color: #f9f9f9;
+  opacity: 0.9;
+}
+// Propriétés au survol des logos du header
 .logo1:hover{
   color: rgba(59, 89, 152, 1)!important;
 }
@@ -18,21 +30,26 @@ a{
 .logo4:hover{
   color: rgba(0, 0, 0, 1)!important;
 }
+// ___________________________________________
+// classe pour les éléments qui auront 0.9 d'opacité
 .opacity{
   text-transform: uppercase;
-  font-family: "griezmann";
   color: #f9f9f9;
-  opacity: 0.6;
+  opacity: 0.9;
 }
+// Classe spécifique au titre H1 du header "VINCENT FEGER"
+.hacked{
+  font-family: "griezmann";//police "hack"
+  color: #f9f9f9;
+  opacity: 0.9;
+}
+// classe qui appliquera une marge à certains titres
+.marg-title{
+  padding-top: 13.7%;
+}
+//on applique une couleur par défaut au titre "creation de site web et applis web"
 .textblanc{
   color: #f9f9f9;
-  margin-top: -13%;
-  opacity: 0.6;
-}
-.marg-title{
-  margin-top: 200px;
-}
-.img-somb{
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
+  padding-top: 13.5%;
 }

@@ -1,28 +1,14 @@
-        // Tous les titres h1 et h2 ainsi que les P contenus dans la classe clear
-    section{
-        h1{
-          color: #f9f9f9;
-          text-align: center;
-          margin-top: 1em;
-        }
-        h2{
-          text-align: center;
-          color:#f9f9f9;
-          margin-left: 1em;
-          font-size: 45px;
-        }
-        h3{
-          text-align: center;
-          color:#f9f9f9;
-          margin-left: 1em;
-          font-size: 45px;
-        }
-        p{
-          color: #f9f9f9;
-        }
+// On aplliques aux sections contenues dans le carousel, un fond plus foncé
+.carousel{
+  background-color: rgba(50, 50, 50, 0.9);
 }
-
+// On applique une petite marge à toutes les sections
+section{
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+ // On fait en sorte que la classe container s'adapte au contenu
 .container{
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }

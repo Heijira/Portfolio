@@ -6,6 +6,14 @@ a {
   text-decoration: none !important;
   color: #f9f9f9 !important; }
 
+.logos {
+  float: right;
+  text-decoration: none;
+  font-family: "icones";
+  font-size: 70px;
+  color: #f9f9f9;
+  opacity: 0.9; }
+
 .logo1:hover {
   color: #3b5998 !important; }
 
@@ -20,21 +28,21 @@ a {
 
 .opacity {
   text-transform: uppercase;
+  color: #f9f9f9;
+  opacity: 0.9; }
+
+.hacked {
   font-family: "griezmann";
   color: #f9f9f9;
-  opacity: 0.6; }
+  opacity: 0.9; }
+
+.marg-title {
+  padding-top: 13.7%; }
 
 .textblanc {
   color: #f9f9f9;
-  margin-top: -13%;
-  opacity: 0.6; }
-
-.marg-title {
-  margin-top: 200px; }
-
-.img-somb {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); }
+  opacity: 0.9;
+  padding-top: 13.5%; }
 
 .footer-dim {
   height: 10%;
@@ -53,51 +61,55 @@ footer {
   border: 0px;
   width: 100%; }
 
-.taille-logos {
-  font-size: 250px; }
+#form_contact {
+  margin-top: 50px; }
 
-.fb {
-  color: #3b5998; }
+label {
+  color: #f9f9f9;
+  margin-right: 20px; }
 
-.twitter {
-  color: #00aced; }
+#msg_nom {
+  color: red; }
 
-.linkedin {
-  color: #007bb6; }
+#msg_sujet {
+  color: red; }
 
-.mail {
-  color: #FD4949; }
+#msg_email {
+  color: red; }
 
-.fb:hover {
-  transition-duration: 0.7s;
-  transition-property: color;
+#msg_message {
+  color: red; }
+
+#send {
+  margin-bottom: 50px; }
+
+#nom {
+  color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0; }
+
+#sujet {
+  color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0; }
+
+#email {
+  color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0; }
+
+#msg_all {
+  margin-top: 150px;
   color: #f9f9f9; }
 
-.twitter:hover {
-  transition-duration: 0.7s;
-  transition-property: color;
+#msg_alert {
   color: #f9f9f9; }
-
-.linkedin:hover {
-  transition-duration: 0.7s;
-  transition-property: color;
-  color: #f9f9f9; }
-
-.mail:hover {
-  transition-duration: 0.7s;
-  transition-property: color;
-  color: #f9f9f9; }
-
-.marg {
-  padding-top: 1.5em; }
-
-li {
-  text-align: center;
-  list-style: none; }
-
-h3 {
-  text-align: center;
-  padding-bottom: 70px; }
 
 .marge-skill img {
   height: 125px;
@@ -106,28 +118,22 @@ h3 {
   padding-top: 10px;
   padding-bottom: 40px; }
 
-.marg-work {
-  padding-top: 8%; }
+.comings00n {
+  font-size: 55px;
+  letter-spacing: 0.75em; }
 
-/* The side navigation menu */
+/*Menu PROFIL*/
 .sidenav {
   height: 100%;
-  /* 100% Full-height */
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
   z-index: 100000000;
-  /* Stay on top */
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.95);
   overflow-y: hidden;
-  /* Disable horizontal scroll */
   padding-top: 60px;
-  /* Place content 60px from the top */
   transition: .5s;
-  /* 0.5 second transition effect to slide in the sidenav */
   color: #f9f9f9; }
   .sidenav h1, .sidenav h2, .sidenav h3, .sidenav h4, .sidenav h5, .sidenav h6 {
     text-align: center; }
@@ -140,7 +146,7 @@ h3 {
     font-size: 18px;
     padding: 80px; }
 
-/* Position and style the close button (top right corner) */
+/* On stylise, et place le bouton de fermeture du menu */
 .closebtn {
   position: absolute;
   top: 0;
@@ -148,37 +154,15 @@ h3 {
   font-size: 36px !important;
   margin-left: 50px; }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-.main {
-  transition: margin-left .5s;
-  padding: 20px; }
+.carousel {
+  background-color: rgba(50, 50, 50, 0.9); }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-
-  .sidenav a {
-    font-size: 18px; } }
-section h1 {
-  color: #f9f9f9;
-  text-align: center;
-  margin-top: 1em; }
-section h2 {
-  text-align: center;
-  color: #f9f9f9;
-  margin-left: 1em;
-  font-size: 45px; }
-section h3 {
-  text-align: center;
-  color: #f9f9f9;
-  margin-left: 1em;
-  font-size: 45px; }
-section p {
-  color: #f9f9f9; }
+section {
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .container {
-  height: 100%;
+  min-height: 100%;
   width: 100%; }
 
 @font-face {
@@ -186,28 +170,7 @@ section p {
   src: url("../img/SocialType.ttf"); }
 @font-face {
   font-family: "griezmann";
-  src: url("../img/Hack-Regular.ttf"); }
-@font-face {
-  font-family: "payet";
-  src: url("../img/social_shapes.ttf"); }
-.carousel {
-  background-color: rgba(50, 50, 50, 0.9); }
-
-.logos {
-  text-decoration: none;
-  font-family: "icones";
-  font-size: 70px;
-  color: #f9f9f9;
-  opacity: 0.7; }
-
-.logo-mail {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "payet";
-  font-size: 70px;
-  color: #f9f9f9;
-  opacity: 0.7; }
-
+  src: url("../img/hack.ttf"); }
 html,
 body {
   background-image: url(../img/forest.jpg);
@@ -218,17 +181,38 @@ body {
   -ms-overflow-style: none; }
   html h1,
   body h1 {
+    color: #f9f9f9;
     text-align: center;
     text-transform: uppercase;
-    font-size: 70px;
-    font-weight: 700;
-    letter-spacing: 0.015em;
+    font-size: 80px;
+    letter-spacing: 0.05em;
     width: 100%; }
+  html h2,
+  body h2 {
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 45px; }
+  html h3,
+  body h3 {
+    text-align: center;
+    color: #f9f9f9; }
+  html h4,
+  body h4 {
+    padding-bottom: 2%;
+    color: #f9f9f9;
+    font-size: 23px;
+    text-decoration: underline; }
   html p,
   body p {
     text-align: center;
     padding: 3px;
     margin: 0 0 10px 0;
-    font-size: 18px; }
+    font-size: 18px;
+    color: #f9f9f9; }
+
+.titres {
+  padding-bottom: 1.5%;
+  margin-bottom: 5%;
+  border-bottom: 1px solid #f9f9f9; }
 
 /*# sourceMappingURL=main.css.map */

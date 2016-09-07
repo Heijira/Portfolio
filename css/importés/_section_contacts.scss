@@ -1,35 +1,55 @@
-.taille-logos{
-  font-size: 250px;
+// Formulaire ID
+#form_contact{
+  margin-top: 50px;
 }
-.fb{
-  color: #3b5998 ;
+// Titres des formulaires
+label{
+  color:#f9f9f9;
+  margin-right: 20px;
 }
-.twitter{
-  color:  #00aced ;
+// Messages d'erreur en rouge !
+#msg_nom{
+  color: red;
 }
-.linkedin{
-  color: #007bb6 ;
+#msg_sujet{
+  color: red;
 }
-.mail{
-  color: #FD4949;
+#msg_email{
+  color: red;
 }
-.fb:hover{
-  transition-duration: 0.7s;
-  transition-property: color;
-  color: #f9f9f9 ;
+#msg_message{
+  color: red;
 }
-.twitter:hover{
-  transition-duration: 0.7s;
-  transition-property: color;
-  color:  #f9f9f9 ;
+// Bouton ENVOYER
+#send{
+  margin-bottom: 50px;
 }
-.linkedin:hover{
-  transition-duration: 0.7s;
-  transition-property: color;
-  color: #f9f9f9 ;
+#nom{
+  color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
-.mail:hover{
-  transition-duration: 0.7s;
-  transition-property: color;
+#sujet{
+  color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+#email{
+  color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+// Messages de vérification
+#msg_all{
+  margin-top: 150px;
+  color: #f9f9f9;
+}
+#msg_alert{
   color: #f9f9f9;
 }
