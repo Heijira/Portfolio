@@ -51,5 +51,22 @@ a{
 .textblanc{
   color: #f9f9f9;
   opacity: 0.9;
-  padding-top: 13.5%;
+  padding-top: 7.5%;
 }
+.clicimage{
+    padding-top: 4%;
+    color: #f9f9f9;
+    font-size: 23px;
+    text-decoration:none;
+    text-align: center;
+}
+.fa-angle-down{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.8%;
+  font-size: 60px;
+  color: #f9f9f9;
+  -webkit-animation: slideOutDown 3000ms infinite;
+  animation: slideOutDown 3000ms infinite;
+  }

@@ -8,10 +8,12 @@
     <title>Portfolio Vincent Feger</title>
     <!-- Import Bootstrap AVANT le fichier css (afin de pouvoir overight) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" media="all" />
     <!-- Import de Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- Import de Bootstrap.js -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Mon CSS _______________________________________________________________-->
     <link rel="stylesheet" href="./css/main.css">
     <script src="js/myscript.js"></script>
@@ -26,25 +28,24 @@
 
   <body>
     <!-- logos réseaux sociaux icones en haut a droite du header -->
-    <div class="col-lg-12"><p class="logos opacity">
+    <div class="col-lg-12">
+      <p class="logos opacity">
         <a class="logo1" target="_blank" href="https://www.facebook.com/profile.php?id=100012291758624&fref=ts">B</a>
         <a class="logo4" target="_blank" href="https://github.com/Heijira">P</a>
-    </p></div>
+      </p>
+    </div>
     <!-- Titres du header, l'image de fond est dans le CSS header.scss -->
-  <header class="container js-scrollTo" href="#carousel2">
-    <div class="row">
-    <div class="">
+  <header class="container">
+    <div class="js-scrollTo" href="#carousel2">
         <div class="marg-title">
           <!-- classe hacked = police d'écriture perso -->
             <h1 class="hacked">Vincent</h1>
             <h1 class="hacked">Feger</h1>
+            <i class="fa fa-angle-down"></i>
+        </div>
       </div>
-    </div>
 
-
-    </div>
-
-  <h3 class="textblanc">Developpeur Web, création de sites et d'applications web</h3>
+      <h3 class="textblanc">Developpeur Web, création de sites et d'applications web</h3>
   </header>
 <!--____________________________________________________________________________-->
 <!--____________________________________________________________________________-->
@@ -56,7 +57,7 @@
 
 <!-- On créé le carousel pour switcher de contenu en fonction du menu de nav ! _-->
 
-<div class="container carousel slide cv clear" id="carousel2">
+<div class="container carousel slide" id="carousel2">
 
   <!-- Création du menu slide, qui s'ouvre au clic de "Profil" ________-->
 
@@ -68,13 +69,14 @@
      <h3>Développeur web junior</h3>
 
           <p class="col-sm-6 marg-up">
-              Passionné d'informatique depuis l'obtention de mon premier PC, j'ai toujours aimé chercher et comprendre "comment" les choses fonctionnent.
+              Passionné d'informatique depuis l'obtention de mon premier PC dès 12 ans, j'ai toujours aimé chercher et comprendre "comment" les choses fonctionnent.
               J'ai appris la guitare de manière autodidacte et je suis aujourd'hui compositeur ainsi qu'interprète dans un groupe.
-              Ma passion pour l'informatique m'a naturellement mené vers le développement.Malgré mes facultés à apprendre de façon autodidacte, j'ai décidé d'intégrer la formation développeur web "beWeb" proposée par Fondespierre à Lunel.
+              Ma passion pour l'informatique m'a naturellement mené vers le développement.
+              Malgré mes facultés à apprendre de façon autodidacte, j'ai décidé d'intégrer la formation développeur web "beWeb" proposée par Fondespierre à Lunel afin de me rapprocher d'un modèle de travail d'une entreprise (travail collaboratif) ainsi que certaines méthodes d'apprentissage.
           </p>
           <p class ="col-sm-6 marg-up">
               Mes objectifs ? j'en ai vraiment beaucoup !
-              Approfondir mes connaissances, me former en web-design, en community managment, exprimer ma créativité à travers mon travail, transmettre ce que j'ai appris, et pourquoi pas un jour developper des jeux vidéos ? (un rêve d'enfance !)
+              Approfondir mes connaissances, me former en web-design, en community managment, exprimer ma créativité à travers mon travail, transmettre ce que j'apprend tout les jours, et pourquoi pas, un jour developper des jeux vidéos ? (un rêve d'enfance !)
           </p>
   </div>
 
@@ -107,33 +109,31 @@
           </div>
         </div>
       </nav>
-    <div class="carousel-inner">
-  <div class="item active">
+
+                    <!-- Carousel pour le contenu -->
+
+  <div class="carousel-inner">
 
             <!-- __________Section Formation__________ !! -->
-            <section class="">
+      <div class="item active">
+          <section class="container fadeIn" data-duration="1500ms">
               <h3 class="titres">Formation</h3>
-              <div class="row">
                   <h4>Formation développeur web beWeb à Lunel :</h4>
                       <p>
                         beWeb est une formation labellisée "grande école du numérique" sur le thème du développement web front-end et back-end (Html/css / PHP / JavaScript / MySQL / Symfony 2 / Bootstrap / Sass / Jquery / AJAX / AngluarJS).
-Utilisation d'outils tel que Linux Ubuntu, Git/GitHub, PhpMyAdmin, Framapad & trello (travail collaboratif), IDE (netbeans).
+Utilisation d'outils tels que Linux Ubuntu, Git/GitHub, PhpMyAdmin, Framapad & Trello (travail collaboratif), IDE (netbeans).
 L'apprentissage est basé sur la pratique et sur le travail collaboratif.
                       </p>
                       <p>
-                        Cette formation a duré 6 mois.
+                        Cette formation dure 6 mois.
                       </p>
-              </div>
             </section>
-          </div>
+        </div>
 
-          <div class="item">
       <!-- __________Section Skills__________ !! -->
-        <section class="">
+      <div class="item">
+        <section class="container fadeIn" data-duration="1500ms">
           <h3 class="titres">Compétences</h3>
-
-      <div class="container">
-          <div class="row">
       <!-- Les div suivantes contiennent les images des logo des diff langages -->
       <!-- Les col sont fait pour que le responsive design se fasse avec bootstrap -->
               <div class="marge-skill col-lg-2 col-md-4 col-sm-6 col-xs-6">
@@ -195,22 +195,17 @@ L'apprentissage est basé sur la pratique et sur le travail collaboratif.
                   <p>Synphony</p>
                   <img class="img-responsive" src="./img/symphony-couleur.png" alt="" />
               </div>
-
-          </div>
-      </div>
             </section>
           </div>
 
     <!-- Section Work -->
   <div class="item">
-    <section class="">
+    <section class="container fadeIn" data-duration="1500ms">
       <h3 class="titres">Works</h3>
     <!-- Page Content -->
-      <div class="container">
           <div class="marg-work row">
-              <h1 class="comings00n">COMING SOON</h1>
+              <p class="comings00n">COMING SOON</p>
           </div>
-      </div>
     </section>
   </div>
 
@@ -219,7 +214,8 @@ L'apprentissage est basé sur la pratique et sur le travail collaboratif.
           <!-- Section COntacts -->
         <!-- FORMULAIRE MAIL -->
     <div class="item">
-
+      <section class="container fadeIn" data-duration="1500ms">
+        <h3 class="titres">Me contacter par mail</h3>
         <div id="form_contact">
             <form action="http://vince-feger.com/process.php" id="contact" method="POST">
               <p>
@@ -247,7 +243,9 @@ L'apprentissage est basé sur la pratique et sur le travail collaboratif.
               </p>
           </form>
         <span id="msg_all"></span>
+          <p id="test"></p>
       </div><!-- Fin du formulaire -->
+    </section>
     </div>
 
   </div>
@@ -255,14 +253,14 @@ L'apprentissage est basé sur la pratique et sur le travail collaboratif.
 
       <!-- FOOTER !_____________________________________________________________-->
   <footer class="footer-dim">
-      <div class="col-sm-6">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <p>
           &copy;Vincent Feger 2016
         </p>
       </div>
-      <div class="col-sm-6">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <p>
-          Portfolio v0.95
+          Portfolio v0.96
         </p>
       </div>
   </footer>

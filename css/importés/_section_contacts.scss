@@ -23,6 +23,7 @@ label{
 // Bouton ENVOYER
 #send{
   margin-bottom: 50px;
+  color: #222;
 }
 #nom{
   color: #f9f9f9;
@@ -45,7 +46,11 @@ label{
   border-left: 0;
   border-right: 0;
 }
-// Messages de vérification
+// couleur du texte de la zone de message
+#message{
+    color: #222;
+}
+// Messages de vérification qui se placent dans les span du formulaire
 #msg_all{
   margin-top: 150px;
   color: #f9f9f9;
